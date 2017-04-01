@@ -42,7 +42,8 @@ double GlobalOptimizationSolver::solvePiyavsky(double a, double b, double r, boo
 	return 0;
 }
 
-double GlobalOptimizationSolver::function(double x)
+double GlobalOptimizationSolver::function(double x, double alpha, double beta,
+					  double gamma, double delta)
 {
-	return x; // Add function here
+	return alpha * sin(beta * x) + gamma * cos(delta * x);
 }
