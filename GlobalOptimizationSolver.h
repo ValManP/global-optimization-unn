@@ -8,5 +8,6 @@ public:
 	double solveStrongin(double a, double b, double r, bool isStopByEps, double eps, int iterationCount);
 	double solvePiyavsky(double a, double b, double r, bool isStopByEps, double eps, int iterationCount);
 
-	double function(double x);
+	double function(double x, double alpha, double beta, 
+		       double gamma, double delta);
 };
